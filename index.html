@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Feliz Año Nuevo</title>
+    <link rel="stylesheet" href="https://unpkg.com/hyper-reset/dist/hyper-reset.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/hyper-properties/dist/hyper-properties.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/hyper-grid/dist/hyper-grid.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+  <body>
+
+    <!-- hiding library elements in the DOM is fun -->
+    <aside id="library">
+      <img src="./assets/images/big-glow.png" id="big-glow" />
+      <img src="./assets/images/small-glow.png" id="small-glow" />
+    </aside>
+
+    <form style="position:fixed; bottom:2rem; left:50%; transform:translate(-50%);">
+      <input id="lapse" type="text">
+      <button id="go">Iniciar</button>
+    </form>
+
+    <div class="row align-xs-center text-align-center" style="min-height:100vh;">
+      <div class="col-xs-12">
+        <h1 class="text-uppercase" style="font-size:11rem" id="display">¿Listos?</h1>
+      </div><!-- /.col -->
+    </div>
+
+    <!-- assets -->
+    <script type="text/javascript" src="./assets/js/animframe.js"></script>
+    <script type="text/javascript" src="./assets/js/fireworks.js"></script>
+    <script type="text/javascript" src="./assets/js/scripts.js"></script>
+  </body>
+</html>
