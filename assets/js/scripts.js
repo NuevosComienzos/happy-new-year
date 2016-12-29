@@ -13,7 +13,8 @@ function startTimer(duration, display) {
     // when success
     if (--duration < 0) {
       display.innerHTML = "Felicidades";
-      Fireworks.initialize();
+      Fireworks.createParticle();
+      Fireworks.createParticle();
     }
   }, 1000);
 }
@@ -30,6 +31,7 @@ go.onclick = function(event) {
   if (durationValue > 0) {
     durationField.classList.remove('danger');
     durationValue = durationValue * 60;
+    Fireworks.initialize();
     startTimer(durationValue, display);
   } else {
     durationField.classList.add('danger');

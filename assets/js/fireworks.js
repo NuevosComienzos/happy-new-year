@@ -50,8 +50,6 @@ var Fireworks = (function() {
 
     // add the canvas in
     document.body.appendChild(mainCanvas);
-    createParticle();
-    createParticle();
     // setInterval(function(){ createParticle() }, 5000);
     // document.addEventListener('mouseup', createFirework, true);
     // document.addEventListener('touchend', createFirework, true);
